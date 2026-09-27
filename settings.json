@@ -1,0 +1,84 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "soft_wrap": "editor_width",
+  "buffer_font_weight": 400.0,
+  "cursor_animation": {
+    "enabled": true
+  },
+  "text_rendering_mode": "platform_default",
+  "agent_buffer_font_size": 15.0,
+  "agent_ui_font_size": 16.0,
+  "ui_font_weight": 400.0,
+  "ui_font_family": "JetBrains Mono",
+  "buffer_line_height": "standard",
+  "icon_theme": "Catppuccin Frappé",
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_features": {
+    "calt": true
+  },
+  "ui_font_size": 16.0,
+  "buffer_font_size": 17.0,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Dark",
+    "dark": "Catppuccin Mocha - No Italics"
+  },
+
+  // Custom Theme
+  "experimental.theme_overrides": {
+    "background": "#11111b",
+    "editor.background": "#11111b",
+    "editor.gutter.background": "#11111b",
+    "terminal.background": "#11111b",
+    "panel.background": "#11111b",
+    "title_bar.background": "#11111b",
+    "status_bar.background": "#11111b",
+    "tab_bar.background": "#11111b",
+    "tab.inactive_background": "#11111b",
+    "tab.active_background": "#11111b",
+    "toolbar.background": "#11111b",
+    "surface.background": "#11111b",
+    "elevated_surface.background": "#11111b",
+    "popover.background": "#11111b",
+    "menu.background": "#11111b",
+    "tooltip.background": "#11111b"
+  },
+  "autosave": "on_focus_change",
+  "languages": {
+    "Python": {
+      "language_servers": ["ruff", "basedpyright"],
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true
+      },
+      "formatter": {
+        "language_server": { "name": "ruff" }
+      }
+    },
+    "JavaScript": {
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "TypeScript": {
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    }
+  },
+
+  // Ai features
+  "disable_ai": true
+}
