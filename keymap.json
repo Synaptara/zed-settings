@@ -1,0 +1,17 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-b": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-enter": "editor::NewlineBelow",
+      "shift-enter": "editor::Newline",
+      "alt-shift-down": "editor::DuplicateLineDown",
+      "alt-shift-up": "editor::DuplicateLineUp",
+    },
+  },
+]
